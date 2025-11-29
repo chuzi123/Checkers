@@ -13,7 +13,7 @@ public:
         reload();
     }
 
-    // Загружает настройки из файла settings.json в объект config
+    // Р—Р°РіСЂСѓР¶Р°РµС‚ РЅР°СЃС‚СЂРѕР№РєРё РёР· С„Р°Р№Р»Р° settings.json РІ РѕР±СЉРµРєС‚ config
     void reload()
     {
         std::ifstream fin(project_path + "settings.json");
@@ -21,8 +21,8 @@ public:
         fin.close();
     }
 
-    // Позволяет обращаться к настройкам как к элементам двумерного массива:
-    // config("Bot", "IsWhiteBot") вернёт значение настройки IsWhiteBot из раздела Bot
+    // РџРѕР·РІРѕР»СЏРµС‚ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ Рє РЅР°СЃС‚СЂРѕР№РєР°Рј РєР°Рє Рє СЌР»РµРјРµРЅС‚Р°Рј РґРІСѓРјРµСЂРЅРѕРіРѕ РјР°СЃСЃРёРІР°:
+    // config("Bot", "IsWhiteBot") РІРµСЂРЅС‘С‚ Р·РЅР°С‡РµРЅРёРµ РЅР°СЃС‚СЂРѕР№РєРё IsWhiteBot РёР· СЂР°Р·РґРµР»Р° Bot
     auto operator()(const string& setting_dir, const string& setting_name) const
     {
         return config[setting_dir][setting_name];
