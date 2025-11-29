@@ -1,9 +1,9 @@
 {
-    "WindowSize": {
-        "Width": 0,
+    "WindowSize": { 
+        "Width": 0, 
         "Hight": 0
     },
-    "Bot": {
+    "Bot": { 
         "IsWhiteBot": false,
         "IsBlackBot": true,
         "WhiteBotLevel": 0,
